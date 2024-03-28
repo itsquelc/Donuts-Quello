@@ -1,0 +1,12 @@
+Configurar o GIT Local
+git config --global user.name itsquelc
+git config --global user.email raquelnunescirino@gmail.com
+
+Criar um projeto MVC (padrão de desenvolvimento) com C#
+-o (significa a saída) - pasta
+dotnet new mvc -o DonutsQuello
+
+Executar o projeto
+cd DonutsQuello
+dotnet watch run
+

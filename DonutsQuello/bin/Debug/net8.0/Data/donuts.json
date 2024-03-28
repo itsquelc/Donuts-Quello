@@ -1,0 +1,74 @@
+[
+    {
+        "Numero": 1,
+        "Nome": "Homer",
+        "Descricao": "Chocolate branco com corante rosa e granulados coloridos.",
+        "Tipo": ["Tradicionais"],
+        "Preco": 15.00,
+        "Imagem": "\\img\\donuts\\01.png"
+      },
+  {
+        "Numero": 2,
+        "Nome": "Glazed",
+        "Descricao": "Cobertura bem fininha de calda de açúcar.",
+        "Tipo": ["Tradicionais"],
+        "Preco": 15.00,
+        "Imagem": "\\img\\donuts\\02.png"
+      },
+  {
+        "Numero": 3,
+        "Nome": "Brigadeiro",
+        "Descricao": "Brigadeiro de panela com granulados de chocolate.",
+        "Tipo": ["Tradicionais"],
+        "Preco": 16.00,
+        "Imagem": "\\img\\donuts\\03.png"
+      },
+  {
+        "Numero": 4,
+        "Nome": "Chocolatudo",
+        "Descricao": "Cobertura de chocolate meio amargo com recheio de brigadeiro de panela.",
+        "Tipo": ["Recheados"],
+        "Preco": 17.00,
+        "Imagem": "\\img\\donuts\\04.png"
+      },
+  {
+        "Numero": 5,
+        "Nome": "Oreo",
+        "Descricao": "Cobertura de chocolate branco com pedaços de bolacha oreo e recheio de brigadeiro de oreo.",
+        "Tipo": ["Recheados"],
+        "Preco": 17.00,
+        "Imagem": "\\img\\donuts\\05.png"
+      },
+  {
+        "Numero": 6,
+        "Nome": "Red Velvet",
+        "Descricao": "Massa red velvet com cobertura de chocolate branco e recheio de cream cheese com chocolate branco.",
+        "Tipo": ["Recheados"],
+        "Preco": 17.00,
+        "Imagem": "\\img\\donuts\\06.png"
+      },
+  {
+        "Numero": 7,
+        "Nome": "Cheedar e Bacon",
+        "Descricao": "Cobertura de cheddar com bacon e muito cheddar no recheio.",
+        "Tipo": ["Salgados"],
+        "Preco": 16.00,
+        "Imagem": "\\img\\donuts\\07.png"
+      },
+  {
+        "Numero": 8,
+        "Nome": "Italiano",
+        "Descricao": "Massa de donuts com recheio de presunto parma, rúcula, mussarela de búfala e tomate cereja.",
+        "Tipo": ["Salgados"],
+        "Preco": 16.00,
+        "Imagem": "\\img\\donuts\\08.png"
+      },
+  {
+        "Numero": 9,
+        "Nome": "Fricassé de Frango",
+        "Descricao": "Massa salgada com recheio de fricasse, cobertura de creme de queijo finalizado com batalha palha e orégano.",
+        "Tipo": ["Salgados"],
+        "Preco": 18.00,
+        "Imagem": "\\img\\donuts\\09.png"
+      }
+]
