@@ -1,14 +1,14 @@
 [
     {
       "Nome": "Tradicionais",
-      "Cor": "#ffcbdb"
+      "Cor": "#ffc1d5"
     },
     {
       "Nome": "Recheados",
-      "Cor": "#39f"
+      "Cor": "#fa8fb1"
     },
     {
       "Nome": "Salgados",
-      "Cor": "#76e"
+      "Cor": "#fc6998"
     }
 ]

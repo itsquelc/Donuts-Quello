@@ -45,6 +45,22 @@
       "PackagePath": "staticwebassets\\img\\donuts\\09.png"
     },
     {
+      "Id": "C:\\Users\\etec\\Desktop\\Donuts-Quello\\DonutsQuello\\wwwroot\\img\\donuts\\10.png",
+      "PackagePath": "staticwebassets\\img\\donuts\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\etec\\Desktop\\Donuts-Quello\\DonutsQuello\\wwwroot\\img\\donuts\\11.png",
+      "PackagePath": "staticwebassets\\img\\donuts\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\etec\\Desktop\\Donuts-Quello\\DonutsQuello\\wwwroot\\img\\donuts\\12.png",
+      "PackagePath": "staticwebassets\\img\\donuts\\12.png"
+    },
+    {
+      "Id": "C:\\Users\\etec\\Desktop\\Donuts-Quello\\DonutsQuello\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\etec\\Desktop\\Donuts-Quello\\DonutsQuello\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

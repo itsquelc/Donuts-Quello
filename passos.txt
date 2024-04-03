@@ -10,3 +10,5 @@ Executar o projeto
 cd DonutsQuello
 dotnet watch run
 
+arrumar tamanho das imagens, tipo e preço.
+pag 152

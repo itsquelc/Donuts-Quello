@@ -23,9 +23,39 @@ public class HomeController : Controller
         string dados = leitor.ReadToEnd();
         donuts = JsonSerializer.Deserialize<List<Donuts>>(dados);
        } 
+       List<Tipo> tipos = [];
+       using (StreamReader leitor = new("Data\\tipo.json"))
+       {
+        string dados = leitor.ReadToEnd();
+        tipos = JsonSerializer.Deserialize<List<Tipo>>(dados);
+       }
+       ViewData["Tipos"] = tipos;
     return View(donuts);
     }
-   
+    public IActionResult Details(int id)
+    {
+        List<Donuts> donuts = [];
+        using (StreamReader leitor = new("Data\\donuts.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            donuts = JsonSerializer.Deserialize<List<Donuts>>(dados);
+        }
+        List<Tipo> tipos = [];
+        using (StreamReader leitor = new("Data\\donuts.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            donuts = JsonSerializer.Deserialize<List<Donuts>>(dados);
+        }
+        DetailsVM details = new()
+        {
+            Tipos = tipos,
+            Atual = donuts.FirstOrDefault(p => p.Numero == id),
+            Anterior = donuts.OrderByDescending(p => p.Numero).FirstOrDefault(p => p.Numero < id),
+            Proximo = donuts.OrderBy(p => p.Numero).FirstOrDefault(p => p.Numero > id)
+        };
+        return View(details);
+    }
+
     public IActionResult Privacy()
     {
         return View();
