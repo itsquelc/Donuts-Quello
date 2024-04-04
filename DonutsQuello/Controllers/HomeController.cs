@@ -14,40 +14,18 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-   
     public IActionResult Index()
     {
-       List<Donuts> donuts = [];
-       using (StreamReader leitor = new("Data\\donuts.json"))
-       {
-        string dados = leitor.ReadToEnd();
-        donuts = JsonSerializer.Deserialize<List<Donuts>>(dados);
-       } 
-       List<Tipo> tipos = [];
-       using (StreamReader leitor = new("Data\\tipo.json"))
-       {
-        string dados = leitor.ReadToEnd();
-        tipos = JsonSerializer.Deserialize<List<Tipo>>(dados);
-       }
+       List<Donuts> donuts = GetDonuts();
+       List<Tipo> tipos = GetTipos();
        ViewData["Tipos"] = tipos;
-    return View(donuts);
+       return View(donuts);
     }
     public IActionResult Details(int id)
     {
-        List<Donuts> donuts = [];
-        using (StreamReader leitor = new("Data\\donuts.json"))
-        {
-            string dados = leitor.ReadToEnd();
-            donuts = JsonSerializer.Deserialize<List<Donuts>>(dados);
-        }
-        List<Tipo> tipos = [];
-        using (StreamReader leitor = new("Data\\donuts.json"))
-        {
-            string dados = leitor.ReadToEnd();
-            donuts = JsonSerializer.Deserialize<List<Donuts>>(dados);
-        }
-        DetailsVM details = new()
-        {
+        List<Donuts> donuts = GetDonuts();
+        List<Tipo> tipos = GetTipos();
+        DetailsVM details = new() {
             Tipos = tipos,
             Atual = donuts.FirstOrDefault(p => p.Numero == id),
             Anterior = donuts.OrderByDescending(p => p.Numero).FirstOrDefault(p => p.Numero < id),
@@ -56,6 +34,23 @@ public class HomeController : Controller
         return View(details);
     }
 
+    private List<Donuts> GetDonuts()
+    {
+        using (StreamReader leitor = new("Data\\donuts.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            return JsonSerializer.Deserialize<List<Donuts>>(dados);
+        }
+    }
+    
+    private List<Tipo> GetTipos()
+    {
+        using (StreamReader leitor = new("Data\\tipo.json"))
+        {
+            string dados = leitor.ReadToEnd();
+            return JsonSerializer.Deserialize<List<Tipo>>(dados);
+        }
+    }
     public IActionResult Privacy()
     {
         return View();

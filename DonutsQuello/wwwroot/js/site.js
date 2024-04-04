@@ -25,7 +25,7 @@
         document.getElementById("btn-all").classList.add("btn-md");
     };
     if (count == 0)
-        document.getElementById("zeroPokemon").classList.remove("d-none");
+        document.getElementById("zeroDonuts").classList.remove("d-none");
     else
-        document.getElementById("zeroPokemon").classList.add("d-none");
+        document.getElementById("zeroDonuts").classList.add("d-none");
 }

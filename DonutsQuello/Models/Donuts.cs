@@ -6,7 +6,7 @@ namespace DonutsQuello.Models
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public List<string> Tipo { get; set; } = [];
-        public decimal Peso { get; set; }
+        public decimal Preco { get; set; }
         public string Imagem { get; set; }
     }
 }
