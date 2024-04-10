@@ -50,6 +50,7 @@ public class HomeController : Controller
             string dados = leitor.ReadToEnd();
             return JsonSerializer.Deserialize<List<Tipo>>(dados);
         }
+     
     }
     public IActionResult Privacy()
     {
